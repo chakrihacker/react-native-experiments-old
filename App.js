@@ -7,14 +7,14 @@
 import React from 'react';
 import {View, StatusBar, StyleSheet} from 'react-native';
 
-import MarketingView from './containers/MarketingView';
+import {GradientIntroSlider} from './screens/gradient-intro-slider';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <View style={styles.container}>
-        <MarketingView />
+        <GradientIntroSlider />
       </View>
     </>
   );

@@ -14,7 +14,7 @@
     "react": "16.13.1",
     "react-native": "0.63.3",
     "react-native-linear-gradient": "^2.5.6",
-    "react-native-reanimated": "^2.0.0-alpha.8",
+    "react-native-reanimated": "^2.0.0-rc.1",
     "use-deep-compare-effect": "^1.6.1"
   },
   "devDependencies": {

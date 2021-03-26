@@ -247,7 +247,7 @@ PODS:
     - React-Core (= 0.63.3)
     - React-cxxreact (= 0.63.3)
     - React-jsi (= 0.63.3)
-  - RNReanimated (2.0.0-alpha.8):
+  - RNReanimated (2.0.0-rc.1):
     - DoubleConversion
     - FBLazyVector
     - FBReactNativeSpec
@@ -400,7 +400,7 @@ SPEC CHECKSUMS:
   React-RCTText: 65a6de06a7389098ce24340d1d3556015c38f746
   React-RCTVibration: 8e9fb25724a0805107fc1acc9075e26f814df454
   ReactCommon: 4167844018c9ed375cc01a843e9ee564399e53c3
-  RNReanimated: 2041d58f790987a36052d777e34c1f82635c2ef3
+  RNReanimated: b2d6785c8fc1f61e1c81179c64c9b6b1a00e6ab5
   Yoga: 7d13633d129fd179e01b8953d38d47be90db185a
 
 PODFILE CHECKSUM: 5bfa0682ba04f83f436e1312cfecf814d0c9c5cc

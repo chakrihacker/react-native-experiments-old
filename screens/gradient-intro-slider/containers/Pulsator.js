@@ -36,6 +36,7 @@ const PulseItem = ({index, color, width}) => {
         },
       ),
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const circleSizeAnimation = useAnimatedStyle(() => {
@@ -68,7 +69,7 @@ const Pulsator = ({count = 2, width, duration, color = '#fff'}) => {
   return (
     <View style={styles.pulseContainer}>
       <Image
-        source={require('../assets/Logo.png')}
+        source={require('../../../assets/Logo.png')}
         style={styles.logo}
         resizeMode={'contain'}
       />

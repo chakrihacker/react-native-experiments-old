@@ -40,17 +40,17 @@ const MarketingView = () => {
             contentContainerStyle={styles.scrollViewContainer}>
             <Slide1 isActive={activeIndex === 0} />
             <ReUsableSlide
-              image={require('../assets/marketSlide1.png')}
+              image={require('../../../assets/marketSlide1.png')}
               text1={'Email NewsLetters '}
               text2={'sent on your behalf to your network.'}
             />
             <ReUsableSlide
-              image={require('../assets/marketSlide2.png')}
+              image={require('../../../assets/marketSlide2.png')}
               text1={'A Branded Website, '}
               text2={'designed to capture visitors.'}
             />
             <ReUsableSlide
-              image={require('../assets/marketSlide3.png')}
+              image={require('../../../assets/marketSlide3.png')}
               text1={'Click-Worthy social posts'}
               text2={'to increase engagement'}
             />
