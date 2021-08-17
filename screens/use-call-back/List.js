@@ -14,7 +14,7 @@ export const List = memo(({list, onRemove}) => {
   console.log('Render: List');
   return (
     <View>
-      {list.map((item) => (
+      {list.map(item => (
         <ListItem key={item.id} item={item} onRemove={onRemove} />
       ))}
     </View>

@@ -1,6 +1,7 @@
 import React, {useCallback} from 'react';
 import {Text, StyleSheet, TextInput, Button, ScrollView} from 'react-native';
 import 'react-native-get-random-values';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {v4 as uuidv4} from 'uuid';
 import {Blub} from './Blub';
 import {List} from './List';
@@ -23,7 +24,7 @@ export const UseCallBackScreen = () => {
 
   const [text, setText] = React.useState('');
 
-  const handleText = (value) => {
+  const handleText = value => {
     setText(value);
   };
 
@@ -32,25 +33,27 @@ export const UseCallBackScreen = () => {
   };
 
   const handleRemove = useCallback(
-    (id) => {
-      setUsers(users.filter((user) => user.id !== id));
+    id => {
+      setUsers(users.filter(user => user.id !== id));
     },
     [users],
   );
 
   return (
-    <ScrollView>
-      <TextInput
-        style={styles.input}
-        value={text}
-        onChangeText={handleText}
-        placeholder={'Enter User Name'}
-      />
-      <Button title={'Add User'} onPress={handleAddUser} />
+    <SafeAreaView>
+      <ScrollView>
+        <TextInput
+          style={styles.input}
+          value={text}
+          onChangeText={handleText}
+          placeholder={'Enter User Name'}
+        />
+        <Button title={'Add User'} onPress={handleAddUser} />
 
-      <List list={users} onRemove={handleRemove} />
-      <Text>{'useEffect and other hooks use Object.is for comparision'}</Text>
-      <Blub />
-    </ScrollView>
+        <List list={users} onRemove={handleRemove} />
+        <Text>{'useEffect and other hooks use Object.is for comparision'}</Text>
+        <Blub />
+      </ScrollView>
+    </SafeAreaView>
   );
 };
