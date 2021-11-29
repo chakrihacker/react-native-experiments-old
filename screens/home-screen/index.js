@@ -15,9 +15,10 @@ export const HomeScreen = ({navigation}) => {
           onPress={() => navigation.navigate('UseCallBackScreen')}
         />
         <Button
-          title={'3. Lottery Ticket Animation'}
+          title={'3. Lottery Wallet Animation'}
           onPress={() => navigation.navigate('LotteryTicketAnimationScreen')}
         />
+        <Button title={'4. I18n'} onPress={() => navigation.navigate('I18n')} />
       </ScrollView>
     </SafeAreaView>
   );

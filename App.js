@@ -14,6 +14,7 @@ import {GradientIntroSlider} from './screens/gradient-intro-slider';
 import {HomeScreen} from './screens/home-screen';
 import {UseCallBackScreen} from './screens/use-call-back';
 import {LotteryScreen} from './screens/lottery';
+import {Localization} from './screens/localization';
 
 const Stack = createStackNavigator();
 
@@ -39,6 +40,7 @@ const App = () => {
             name={'LotteryTicketAnimationScreen'}
             component={LotteryScreen}
           />
+          <Stack.Screen name={'I18n'} component={Localization} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
