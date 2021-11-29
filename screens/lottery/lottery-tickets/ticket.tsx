@@ -21,7 +21,7 @@ import {
   TICKET_SHRINKED_HEADER_HEIGHT,
 } from './ticket-list';
 
-const {width: WINDOW_WIDTH, height: WINDOW_HEIGHT} = Dimensions.get('window');
+const {height: WINDOW_HEIGHT} = Dimensions.get('window');
 
 export enum TicketState {
   OPENED,
