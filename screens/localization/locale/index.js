@@ -24,7 +24,6 @@ export const translate = memoize(
 export const setI18nConfig = updatedLanguage => {
   translate.cache.clear();
   // I18nManager.forceRTL(rtlGetters[languageTag]);
-  // i18n.isRTL = rtlGetters[languageTag];
   if (!updatedLanguage) {
     const fallback = {languageTag: 'en', isRTL: false};
 
