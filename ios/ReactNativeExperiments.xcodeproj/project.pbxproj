@@ -12,6 +12,8 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		373C319C2754CC6A008C4CEB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 373C319E2754CC6A008C4CEB /* Localizable.strings */; };
+		46E9AF8128BC9B342A86687E /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7A183B315E00A0FDFE582B /* ExpoModulesProvider.swift */; };
+		490F9128228207F36235DB38 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC1ED0411F4254F5428DD2 /* ExpoModulesProvider.swift */; };
 		55864A5CEB818EB39AC4036B /* libPods-ReactNativeExperiments-ReactNativeExperimentsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 054D93DD99ED0A029DB34996 /* libPods-ReactNativeExperiments-ReactNativeExperimentsTests.a */; };
 		74392FF192CE70965F61AE20 /* libPods-ReactNativeExperiments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2524306729D209DCC66DC5E1 /* libPods-ReactNativeExperiments.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -46,6 +48,8 @@
 		373C319F2754CC6D008C4CEB /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6A221B01BAEEECE9BE4D2A6E /* Pods-ReactNativeExperiments-ReactNativeExperimentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeExperiments-ReactNativeExperimentsTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeExperiments-ReactNativeExperimentsTests/Pods-ReactNativeExperiments-ReactNativeExperimentsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeExperiments/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9ABC1ED0411F4254F5428DD2 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ReactNativeExperiments-ReactNativeExperimentsTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		BF7A183B315E00A0FDFE582B /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ReactNativeExperiments/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F3610A2A5C7688B3AA7AF89E /* Pods-ReactNativeExperiments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeExperiments.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeExperiments/Pods-ReactNativeExperiments.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +118,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		795C40F8D40CC2034D7EE690 /* ReactNativeExperimentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9ABC1ED0411F4254F5428DD2 /* ExpoModulesProvider.swift */,
+			);
+			name = ReactNativeExperimentsTests;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +142,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C33332C83E95252991844963 /* Pods */,
+				CD2445D20760627A9778D9DF /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -145,6 +158,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A91E1879A941842541E188F1 /* ReactNativeExperiments */ = {
+			isa = PBXGroup;
+			children = (
+				BF7A183B315E00A0FDFE582B /* ExpoModulesProvider.swift */,
+			);
+			name = ReactNativeExperiments;
+			sourceTree = "<group>";
+		};
 		C33332C83E95252991844963 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +175,15 @@
 				07CBB5C72B643B48634E2FC3 /* Pods-ReactNativeExperiments-ReactNativeExperimentsTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD2445D20760627A9778D9DF /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				A91E1879A941842541E188F1 /* ReactNativeExperiments */,
+				795C40F8D40CC2034D7EE690 /* ReactNativeExperimentsTests */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,10 +334,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeExperiments-ReactNativeExperimentsTests/Pods-ReactNativeExperiments-ReactNativeExperimentsTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,10 +398,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeExperiments/Pods-ReactNativeExperiments-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ReactNativeExperimentsTests.m in Sources */,
+				490F9128228207F36235DB38 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +470,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				46E9AF8128BC9B342A86687E /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +507,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ReactNativeExperimentsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -491,7 +527,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactNativeExperimentsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -598,7 +634,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
@@ -652,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
