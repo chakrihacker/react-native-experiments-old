@@ -15,6 +15,7 @@ import {HomeScreen} from './screens/home-screen';
 import {UseCallBackScreen} from './screens/use-call-back';
 import {LotteryScreen} from './screens/lottery';
 import {Localization} from './screens/localization';
+import {AdvancedForm} from './screens/advanced-form';
 
 const Stack = createStackNavigator();
 
@@ -41,6 +42,7 @@ const App = () => {
             component={LotteryScreen}
           />
           <Stack.Screen name={'I18n'} component={Localization} />
+          <Stack.Screen name={'AdvancedForm'} component={AdvancedForm} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
