@@ -23,6 +23,10 @@ export const HomeScreen = ({navigation}) => {
           title={'5. Schema Based Form'}
           onPress={() => navigation.navigate('AdvancedForm')}
         />
+        <Button
+          title={'6. Skia Example'}
+          onPress={() => navigation.navigate('SkiaExample')}
+        />
       </ScrollView>
     </SafeAreaView>
   );
